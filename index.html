@@ -23,7 +23,7 @@
             <div class="logo">
                 <span>o</span>
                 <span>h</span>
-                <span>m</span>
+                <span>m</span> 
                 <span>y</span>
                 <span>f</span>
                 <span>o</span>
@@ -31,6 +31,7 @@
                 <span>d</span>
             </div>
             <div class="localisation">
+                <i class="fa-solid fa-location-dot"></i>
                 <p>Paris, Belleville</p>
             </div>
         </div>
@@ -41,28 +42,37 @@
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
             <button >Explorer nos restaurants</button>
         </section>
-        <section class="rules">
+        <section class="rules space">
             <h2>Fonctionnement</h2>
             <div class="rules-flex">
                 <div class="rules-card">
                     <span>1</span>
-                    <p>Choisissez un restaurant</p>
+                    <div class="rules-card-text">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </div>
                 </div>
                 <div class="rules-card">
                     <span>2</span>
-                    <p>Composez votre menu</p>
+                    <div class="rules-card-text">
+                        <i class="fa-solid fa-list"></i>
+                        <p>Composez votre menu</p>
+                    </div>
                 </div>
                 <div class="rules-card">
                     <span>3</span>
-                    <p>Dégustez au restaurant</p>
+                    <div class="rules-card-text">
+                        <i class="fa-solid fa-store"></i>
+                        <p>Dégustez au restaurant</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="Resto">
+        <section class="Resto space">
             <h2>Restaurants</h2>
             <div class="Resto-flex">
                 <article class="card">
-                    <a href="#">
+                    <a href="la-palette-du-gout.html">
                         <img src="./images/restaurants/Resto1.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
                             <div class="card-txt">
@@ -70,21 +80,25 @@
                                 <p class="card-subtitle">Ménilmontant</p>
                             </div>
                     </a>
-                    <span><button class="like"><i class="fa-regular fa-heart ZU"></i></button></span>
-                    <span><i class="fa-solid fa-heart ZD"></i></span>
-                </article>
+                    <span>
+                        <input type="checkbox" id="liked1">
+                        <label for="liked1">
+                            <i class="fa-regular fa-heart ZU"></i>
+                        </label>
+                    </span>
+                    <span><i class="fa-solid fa-heart ZD"></i></span>                </article>
                 <article class="card">
                     <a href="#">
                         <img src="./images/restaurants/Resto2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                         <div class="card-content">
                             <div class="card-txt">
-                                <h3 class="card-title">La palette du goût</h3>
+                                <h3 class="card-title">La note enchantée</h3>
                                 <p class="card-subtitle">Ménilmontant</p>
                             </div>
                     </a>
                     <span>
-                        <input type="checkbox" id="liked">
-                        <label for="liked">
+                        <input type="checkbox" id="liked2">
+                        <label for="liked2">
                             <i class="fa-regular fa-heart ZU"></i>
                         </label>
                     </span>
@@ -99,9 +113,13 @@
                                 <p class="card-subtitle">Cité Rouge</p>
                             </div>
                     </a>
-                    <span><button><i class="fa-regular fa-heart ZU"></i></button></span>
-                    <span><i class="fa-solid fa-heart ZU"></i></span>
-                </article>
+                    <span>
+                        <input type="checkbox" id="liked3">
+                        <label for="liked3">
+                            <i class="fa-regular fa-heart ZU"></i>
+                        </label>
+                    </span>
+                    <span><i class="fa-solid fa-heart ZD"></i></span>                </article>
                 <article class="card">
                     <a href="#">
                         <img src="./images/restaurants/Resto4.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -111,14 +129,18 @@
                                 <p class="card-subtitle">Folie-Méricourt</p>
                             </div>
                     </a>
-                    <span><button><i class="fa-regular fa-heart ZU"></i></button></span>
-                    <span><i class="fa-solid fa-heart ZD"></i></span>
-                </article>
+                    <span>
+                        <input type="checkbox" id="liked4">
+                        <label for="liked4">
+                            <i class="fa-regular fa-heart ZU"></i>
+                        </label>
+                    </span>
+                    <span><i class="fa-solid fa-heart ZD"></i></span>                </article>
             </div>
         </section>
     </main>
     <footer class="pdp">
-        <div class="pdp-flex">
+        <div class="pdp-flex space">
             <a href="" class="pdp-slice">
                 <p>Proposer un restaurant</p>
             </a>
