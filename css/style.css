@@ -67,7 +67,6 @@ main{
     align-items: center;
     box-shadow: 0px 4px 4px 0px #00000040;
     gap: 30px;
-
 }
 .intro{
     display: flex;
@@ -125,6 +124,10 @@ main{
     justify-content: center;
     gap: 30px; 
     padding-left: 30px;
+}
+.rules-card-text .fa-solid{
+    color: #7E7E7E;
+    ;
 }
 .rules-card p{
     font-family: Roboto;
@@ -233,6 +236,11 @@ main{
     width: 100%;
     background-color: black;
 }
+.pdp .logo{
+    color: white;
+    justify-content: start;
+    padding-top: 20px;
+}
 .pdp-slice{
     color: white;
 }
@@ -250,7 +258,12 @@ main{
     }
     .pdp-flex{
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
         gap: 50px;
+        align-items: center;
+    }
+    .pdp .logo{
+        padding-top: 0;
     }
 }
