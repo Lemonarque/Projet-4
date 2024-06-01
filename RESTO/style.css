@@ -63,14 +63,14 @@ body{
     animation-iteration-count: 1;
 }
 .loader__item--1 {
-    background-color: #9356dc;
+    background-color:   red;
 }
 .loader__item--2 {
-    background-color: #ff79da;
+    background-color: black;
     animation-delay: .25s;
 }
 .loader__item--3 {
-    background-color: #99e2d0;
+    background-color: honeydew;
     animation-delay: .5s;
 }
 header{
