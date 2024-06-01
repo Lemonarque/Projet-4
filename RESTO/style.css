@@ -35,6 +35,44 @@ body{
     align-items: center;
     margin: 0;
 }
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0, 0%, 100%, .9);
+    animation: loader .01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader__itemContainer {
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+}
+.loader__item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    animation: jump 1s;
+    animation-iteration-count: 1;
+}
+.loader__item--1 {
+    background-color: #9356dc;
+}
+.loader__item--2 {
+    background-color: #ff79da;
+    animation-delay: .25s;
+}
+.loader__item--3 {
+    background-color: #99e2d0;
+    animation-delay: .5s;
+}
 header{
     width: 100%;
 }
@@ -236,18 +274,47 @@ main{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-.pdp{
-    width: 100%;
-    background-color: black;
+.footer{
+    background-color: #353535;
 }
-.pdp .logo{
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.footer__logo {
     color: white;
-    justify-content: start;
-    padding-top: 20px;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
-.pdp-slice{
+.footer__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer__listElt {
+    margin: 0.5rem 0;
+}
+.footer__listElt:first-child {
+    margin-top: 0;
+}
+.footer__listElt:last-child {
+    margin-bottom: 0;
+}
+.footer__link {
     color: white;
+    text-decoration: none;
 }
+.footer__link:hover {
+    text-decoration: underline;
+}
+.footer__icon {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+}
+
 @media(min-width:768px){
     .rules-flex{
         flex-direction: row;
@@ -260,14 +327,9 @@ main{
     .Resto .card{
         width: 30%;
     }
-    .pdp-flex{
+    .footer .container {
         display: flex;
-        justify-content: flex-start;
         flex-direction: row-reverse;
-        gap: 50px;
-        align-items: center;
-    }
-    .pdp .logo{
-        padding-top: 0;
+        padding: 1rem;
     }
 }
