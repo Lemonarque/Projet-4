@@ -198,6 +198,11 @@ main{
     color: white;
     position: absolute;
     left: -10px;
+    font-family: Roboto;
+    font-size: 14.18px;
+    font-weight: 500;
+    line-height: 16.62px;
+    text-align: left;
 }
 .Resto{
     padding-top: 30px;

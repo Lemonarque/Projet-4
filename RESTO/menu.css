@@ -17,6 +17,7 @@ body, html{
 }
 em{
     border-bottom: 3px solid #99E2D0;
+    font-style: normal;
 }
 .logo span{
     font-size: x-large;
@@ -146,6 +147,12 @@ a{
     position: relative;
     padding-bottom: 0.5rem;
     font-weight: normal;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 18.75px;
+    text-align: left;
+
 }
 .submenu__title::after {
     content: "";
