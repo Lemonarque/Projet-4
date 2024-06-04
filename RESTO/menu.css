@@ -72,7 +72,6 @@ a{
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
 }
 .menu__title {
     font-family: "Shrikhand", "cursive";
@@ -135,9 +134,9 @@ a{
 .submenu {
     max-width: 100%;
     overflow: hidden;
-    padding: 0 1rem;
     animation-name: showing;
-    width: 100%;
+    width: 95%;
+    padding: 0 12px;
 }
 .submenu__title {
     text-transform: uppercase;
@@ -293,16 +292,16 @@ a{
 
 .ZU{
     position: absolute;
-    right: 170px;
-    top: 40px;
+    right: 20%;
+    top: 45%;
     font-size: x-large;
     background-color: #f6f6f6;
     z-index: 10;
 }
 .ZD{
     position: absolute;
-    right: 170px;
-    top: 40px;
+    right: 20%;
+    top: 45%;
     font-size: x-large;
     z-index: 9;
     display: inline-block;
@@ -334,6 +333,14 @@ a{
     margin: 5px;
 }
 @media(min-width:768px){
+    .ZU{
+        right: -2%;
+        top: 45%;
+    }
+    .ZD{
+        right: -2%;
+        top: 45%;
+    }
     .menu{
         padding-left: 10%;
         padding-right: 10%;
