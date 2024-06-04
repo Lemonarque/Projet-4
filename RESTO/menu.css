@@ -134,6 +134,7 @@ a{
     max-width: 100%;
     overflow: hidden;
     padding: 0 1rem;
+    animation-name: showing;
 }
 .submenu__title {
     text-transform: uppercase;
@@ -259,6 +260,15 @@ a{
 .delay-8 {
     animation-delay: 0.8s;
 }
+.time1{
+    animation-duration: 2s;
+}
+.time2{
+    animation-duration: 3s;
+}
+.time3{
+    animation-duration: 4s;
+}
 .wrapBtn {
     display: flex;
     text-decoration: none;
@@ -332,5 +342,13 @@ a{
     .foot .logo{
         padding-top: 0;
         padding-right: 20px;
+    }
+}
+@keyframes showing {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }

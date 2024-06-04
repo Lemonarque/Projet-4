@@ -323,6 +323,12 @@ main{
     margin: 5px;
 }
 @media(min-width:768px){
+    .logo{
+        box-shadow: none;
+    }
+    .head-localisation{
+        box-shadow: none;
+    }
     .rules{
         padding-left: 10%;
         padding-right: 10%;
