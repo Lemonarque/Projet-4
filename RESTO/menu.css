@@ -15,6 +15,9 @@ body, html{
     height: 60px;
     width: 50px;
 }
+em{
+    border-bottom: 3px solid #99E2D0;
+}
 .logo span{
     font-size: x-large;
     font-family: "Shrikhand", serif;
