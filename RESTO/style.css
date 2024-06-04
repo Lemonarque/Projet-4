@@ -79,25 +79,14 @@ header{
 main{
     width: 100%;
 }
-.en-tête{
+.head{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo span{
-    font-size: x-large;
-    font-family: "Shrikhand", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-.localisation{
+.head-localisation{
     background: #EAEAEA;
     width: 100%;
     display: flex;
@@ -105,7 +94,25 @@ main{
     align-items: center;
     box-shadow: 0px 4px 4px 0px #00000040;
     gap: 30px;
+    height: 50px;
+    z-index: 10;
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    z-index: 11;
+}
+.logo span{
+    font-size: x-large;
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
@@ -113,6 +120,7 @@ main{
     justify-content: center;
     width: 100%;
     background: #F6F6F6;
+    padding-top: 20px;
 }
 .intro p{
     text-align: center;
@@ -129,11 +137,13 @@ main{
     font-style: normal;
     box-shadow: 0px 4px 10px 0px #00000040;
     margin-bottom: 50px;
+    margin-top: 30px;
     
 }
 .intro button:hover{
     box-shadow: 1px 1px 10px 1px #00000040;
     filter: brightness(120%);
+    transition: 1s;
 }
 .rules-flex{
     display: flex;
@@ -151,7 +161,7 @@ main{
     gap: 30px;
     background: #F6F6F6;
     width: 90%;
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0px 4px 15px 0px #00000026;
     position: relative;
 }
@@ -202,7 +212,22 @@ main{
     align-items: center;
     width: 100%;
 }
-.card {
+.Resto-flex-1{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}.Resto-flex-2{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Resto-card {
     background-color: white;
     border-radius: 20px;
     padding: 0;
@@ -210,23 +235,23 @@ main{
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     position: relative;
 }
-.card img{
+.Resto-card img{
     width: 100%;
     height: 160px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
 }
-.card-txt{
+.Resto-card-txt{
     padding: 10px;
 }
-.card-title{
+.Resto-card-title{
     margin: 0;
 }
-.card-subtitle{
+.Resto-card-subtitle{
     margin: 0;
 }
-.card button{
+.Resto-card button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,16 +266,19 @@ main{
 }
 #liked1:checked + label .ZU{
     opacity: 0;
-    transition: 0.1s;
+    transition: 0.5s;
 }
 #liked2:checked + label .ZU{
     opacity: 0;
+    transition: 0.5s;
 }
 #liked3:checked + label .ZU{
     opacity: 0;
+    transition: 0.5s;
 }
 #liked4:checked + label .ZU{
     opacity: 0;
+    transition: 0.5s;
 }
 
 .ZU{
@@ -274,63 +302,73 @@ main{
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-.footer{
-    background-color: #353535;
+.foot{
+    width: 100%;
+    background-color:   #353535;
 }
-.footer .container {
+.foot .logo{
+    color: white;
+    justify-content: start;
+    padding-top: 20px;
+    box-shadow: none;
+    width: auto;
+}
+.foot-slice{
+    color: white;
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
+    align-items: center;
+    gap: 15px;
 }
-.footer__logo {
-    color: white;
-    font-family: "Shrikhand", "cursive";
-    margin: 0;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+.foot-slice p{
+    margin: 5px;
 }
-.footer__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.footer__listElt {
-    margin: 0.5rem 0;
-}
-.footer__listElt:first-child {
-    margin-top: 0;
-}
-.footer__listElt:last-child {
-    margin-bottom: 0;
-}
-.footer__link {
-    color: white;
-    text-decoration: none;
-}
-.footer__link:hover {
-    text-decoration: underline;
-}
-.footer__icon {
-    width: 1.2rem;
-    margin-right: 0.5rem;
-}
-
 @media(min-width:768px){
+    .rules{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .rules-flex{
         flex-direction: row;
     }
+    .Resto{
+        padding-left: 10%;
+    }
     .Resto-flex{
+        flex-direction: column;
+        gap: 50px;
+        align-items: normal;
+    }
+    .Resto-flex-1{
+        gap: 15px;
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        width: 91%;
+        gap: 60px;
+    }
+    .Resto-flex-2{
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 91%;
+        gap: 60px;
     }
     .Resto .card{
         width: 30%;
     }
-    .footer .container {
+    .foot-flex{
         display: flex;
+        justify-content: flex-start;
         flex-direction: row-reverse;
-        padding: 1rem;
+        gap: 50px;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .foot .logo{
+        padding-top: 0;
     }
 }
 @keyframes loader{

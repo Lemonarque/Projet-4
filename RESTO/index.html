@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booki</title>
+    <title>ohmyfood</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
         </div>
     </div>
     <header>
-        <div class="en-tête">
+        <div class="head">
             <div class="logo">
                 <span>o</span>
                 <span>h</span>
@@ -37,7 +37,7 @@
                 <span>o</span>
                 <span>d</span>
             </div>
-            <div class="localisation">
+            <div class="head-localisation">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>Paris, Belleville</p>
             </div>
@@ -78,94 +78,109 @@
         <section class="Resto space">
             <h2>Restaurants</h2>
             <div class="Resto-flex">
-                <article class="card">
-                    <a href="la-palette-du-gout.html">
-                        <img src="./images/restaurants/Resto1.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                        <div class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">La palette du goût</h3>
-                                <p class="card-subtitle">Ménilmontant</p>
-                            </div>
-                    </a>
-                    <span>
-                        <input type="checkbox" id="liked1">
-                        <label for="liked1">
-                            <i class="fa-regular fa-heart ZU"></i>
-                        </label>
-                    </span>
-                    <span><i class="fa-solid fa-heart ZD"></i></span>                </article>
-                <article class="card">
-                    <a href="la-note-enchantee.html">
-                        <img src="./images/restaurants/Resto2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                        <div class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">La note enchantée</h3>
-                                <p class="card-subtitle">Ménilmontant</p>
-                            </div>
-                    </a>
-                    <span>
-                        <input type="checkbox" id="liked2">
-                        <label for="liked2">
-                            <i class="fa-regular fa-heart ZU"></i>
-                        </label>
-                    </span>
-                    <span><i class="fa-solid fa-heart ZD"></i></span>
-                </article>
-                <article class="card">
-                    <a href="a-la-francaise.html">
-                        <img src="./images/restaurants/Resto3.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                        <div class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">À la française</h3>
-                                <p class="card-subtitle">Cité Rouge</p>
-                            </div>
-                    </a>
-                    <span>
-                        <input type="checkbox" id="liked3">
-                        <label for="liked3">
-                            <i class="fa-regular fa-heart ZU"></i>
-                        </label>
-                    </span>
-                    <span><i class="fa-solid fa-heart ZD"></i></span>                
-                </article>
-                <article class="card">
-                    <a href="le-delice-des-sens.html">
-                        <img src="./images/restaurants/Resto4.jpg" alt="Image de la chambre d'hôtel montrant un lit">
-                        <div class="card-content">
-                            <div class="card-txt">
-                                <h3 class="card-title">Le délice des sens</h3>
-                                <p class="card-subtitle">Folie-Méricourt</p>
-                            </div>
-                    </a>
-                    <span>
-                        <input type="checkbox" id="liked4">
-                        <label for="liked4">
-                            <i class="fa-regular fa-heart ZU"></i>
-                        </label>
-                    </span>
-                    <span><i class="fa-solid fa-heart ZD"></i></span>                </article>
+                <div class="Resto-flex-1">
+                    <article class="Resto-card">
+                        <a href="la-palette-du-gout.html">
+                            <img src="./images/restaurants/Resto1.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="Resto-card-content">
+                                <div class="Resto-card-txt">
+                                    <h3 class="Resto-card-title">La palette du goût</h3>
+                                    <p class="Resto-card-subtitle">Ménilmontant</p>
+                                </div>
+                        </a>
+                        <span>
+                            <input type="checkbox" id="liked1">
+                            <label for="liked1">
+                                <i class="fa-regular fa-heart ZU"></i>
+                            </label>
+                        </span>
+                        <span><i class="fa-solid fa-heart ZD"></i></span>                
+                    </article>
+                    <article class="Resto-card">
+                        <a href="la-note-enchantee.html">
+                            <img src="./images/restaurants/Resto2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="Resto-card-content">
+                                <div class="Resto-card-txt">
+                                    <h3 class="Resto-card-title">La note enchantée</h3>
+                                    <p class="Resto-card-subtitle">Ménilmontant</p>
+                                </div>
+                        </a>
+                        <span>
+                            <input type="checkbox" id="liked2">
+                            <label for="liked2">
+                                <i class="fa-regular fa-heart ZU"></i>
+                            </label>
+                        </span>
+                        <span><i class="fa-solid fa-heart ZD"></i></span>
+                    </article>
+                </div>
+                <div class="Resto-flex-2"> 
+                    <article class="Resto-card">
+                        <a href="a-la-francaise.html">
+                            <img src="./images/restaurants/Resto3.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="Resto-card-content">
+                                <div class="Resto-card-txt">
+                                    <h3 class="Resto-card-title">À la française</h3>
+                                    <p class="Resto-card-subtitle">Cité Rouge</p>
+                                </div>
+                        </a>
+                        <span>
+                            <input type="checkbox" id="liked3">
+                            <label for="liked3">
+                                <i class="fa-regular fa-heart ZU"></i>
+                            </label>
+                        </span>
+                        <span><i class="fa-solid fa-heart ZD"></i></span>                
+                    </article>
+                    <article class="Resto-card">
+                        <a href="le-delice-des-sens.html">
+                            <img src="./images/restaurants/Resto4.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                            <div class="Resto-card-content">
+                                <div class="Resto-card-txt">
+                                    <h3 class="Resto-card-title">Le délice des sens</h3>
+                                    <p class="Resto-card-subtitle">Folie-Méricourt</p>
+                                </div>
+                        </a>
+                        <span>
+                            <input type="checkbox" id="liked4">
+                            <label for="liked4">
+                                <i class="fa-regular fa-heart ZU"></i>
+                            </label>
+                        </span>
+                        <span><i class="fa-solid fa-heart ZD"></i></span>                
+                    </article>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="container">
-          <span class="footer__logo">ohmyfood</span>
-          <ul class="footer__list">
-            <li class="footer__listElt">
-              <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
-            </li>
-            <li class="footer__listElt">
-              <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
-            </li>
-            <li class="footer__listElt">
-              <a class="footer__link" href="#">Mentions légales</a>
-            </li>
-            <li class="footer__listElt">
-              <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
-            </li>
-          </ul>
+    <footer class="foot">
+        <div class="foot-flex space">
+            <div class="logo">
+                <span>o</span>
+                <span>h</span>
+                <span>m</span> 
+                <span>y</span>
+                <span>f</span>
+                <span>o</span>
+                <span>o</span>
+                <span>d</span>
+            </div>
+            <a href="" class="foot-slice">
+                <i class="footer__icon fas fa-utensils"></i>
+                <p>Proposer un restaurant</p>
+            </a>
+            <a href="" class="foot-slice">
+                <i class="footer__icon fas fa-hands-helping"></i>
+                <p>Devenir partenaire</p>
+            </a>
+            <a href="" class="foot-slice">
+                <p>Mentions légales</p>
+            </a>
+            <a href="" class="foot-slice">
+                <p>Contact</p>
+            </a>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
